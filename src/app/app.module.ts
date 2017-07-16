@@ -11,12 +11,14 @@ import { InMemoryDataService }  from './service/in-memory-data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './forms/dashboard.component';
+import { HeroDetailComponent } from './forms/hero-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,

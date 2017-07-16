@@ -9,13 +9,13 @@ import { HeroService } from '../service/hero.service';
   styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent implements OnInit {
-  heroes: Member[] = [];
+  members: Member[] = [];
 
   constructor(private heroService: HeroService) { }
 
   ngOnInit(): void {
-    this.heroService.getHeroes()
-      .then(heroes => this.heroes = heroes.slice(1, 5));
+    this.heroService.getMembers()
+      .then(members => this.members = members.slice(1, 5));
   }
 }
 
