@@ -10,9 +10,9 @@ import { Member } from '../model/member';
 
 @Injectable()
 
-export class HeroService {
+export class MyService {
 
-    private heroesUrl = 'api/members';  // URL to web api
+    private heroesUrl = '/api/members';  // URL to web api
     private headers = new Headers({ 'Content-Type': 'application/json' }); // for PUT actions
 
     constructor(private http: Http) { }

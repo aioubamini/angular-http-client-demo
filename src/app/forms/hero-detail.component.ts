@@ -4,7 +4,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { Member } from '../model/member';
-import { HeroService } from '../service/hero.service';
+import { MyService } from '../service/my-service.service';
 
 @Component({
   selector: 'member-detail',
@@ -15,7 +15,7 @@ export class HeroDetailComponent implements OnInit {
   member: Member;
 
   constructor(
-    private heroService: HeroService,
+    private heroService: MyService,
     private route: ActivatedRoute,
     private location: Location
   ) { }
